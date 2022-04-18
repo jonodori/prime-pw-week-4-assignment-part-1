@@ -67,8 +67,17 @@ console.log(getLast([])); // test to see if it returns undefined
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find( value, array ){
-  
+  for (let i = 0; i < array.length - 1; i++){
+    if (array[i] === value){
+      return true;
+    }      
+  }
+  return false;
 }
+
+console.log(find( 1, [1,2,3]));
+console.log(find( 9, [1,3,5]));
+
 
 // ----------------------
 // Stretch Goals
