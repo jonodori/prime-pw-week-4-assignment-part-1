@@ -119,3 +119,21 @@ console.log(getPos([-1, -3, -4])) // test to see if it returns an empty array
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
 
+// Write a function that takes an integer minutes and converts it to seconds.
+
+// Examples
+// convert(5) ➞ 300
+
+// convert(3) ➞ 180
+
+// convert(2) ➞ 120
+
+function convert(min){
+  min *= 60;  
+  return min;
+}
+
+console.log(convert(5)); //test to see if the right value appears 
+console.log(convert(3));
+console.log(convert(2));
+
