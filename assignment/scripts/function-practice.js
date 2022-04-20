@@ -100,9 +100,22 @@ function sumAll( ) {
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
+function getPos(array){
+  let firstArray = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] > 0)
+    firstArray.push(array[i]);
+    }  
+    return firstArray;
+  }
 
+
+console.log(getPos([1, 3, 4])); //test to see if it returns the array 
+console.log(getPos([-1, -3, 1, -4])); //test to see if it returns positive number
+console.log(getPos([-1, -3, -4])) // test to see if it returns an empty array 
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+
